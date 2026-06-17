@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Cosmos ERP 拋轉還原影音模擬器",
+  "description": "提供鼎新 Cosmos ERP 應付憑單、分錄底稿與傳票整理流程 照片/字幕/旁白 合一之非互動式動畫影音教學系統。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

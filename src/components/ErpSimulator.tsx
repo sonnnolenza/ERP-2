@@ -248,7 +248,7 @@ export default function ErpSimulator({
 
         <div className="p-2 border-t border-slate-200 bg-slate-50 text-[10px] text-slate-500 flex flex-col gap-0.5 font-mono min-w-0 truncate">
           <div className="truncate">公司: 艾盟仕</div>
-          <div className="truncate">用戶: 王淑菲</div>
+          <div className="truncate">用戶: 會計助理</div>
         </div>
       </div>
 
@@ -577,7 +577,7 @@ export default function ErpSimulator({
                     />
                   </div>
                   <div className="text-[10.5px] text-slate-500 leading-relaxed font-mono">
-                    格式: <span className="text-orange-700 font-semibold">W</span>(王) + <span className="text-green-700 font-semibold">20260603</span>(今天) + <span className="text-blue-700 font-semibold">20260527</span>(傳票產生) + <span className="text-purple-700 font-semibold">005</span>(筆數)
+                    格式: <span className="text-orange-700 font-semibold">W</span>(助理) + <span className="text-green-700 font-semibold">20260603</span>(今天) + <span className="text-blue-700 font-semibold">20260527</span>(傳票產生) + <span className="text-purple-700 font-semibold">005</span>(筆數)
                   </div>
                 </div>
 
@@ -908,7 +908,7 @@ export default function ErpSimulator({
                         <td className="p-1 border-b border-r border-slate-200 text-slate-800 font-sans">轉帳傳票</td>
                         <td className="p-1 border-b border-r border-slate-200 font-bold text-blue-900">20260527009</td>
                         <td className="p-1 border-b border-r border-slate-200 text-slate-800">2026/05/27</td>
-                        <td className="p-1 border-b border-r border-slate-200 font-sans text-slate-700">王淑菲 (Sophie...)</td>
+                        <td className="p-1 border-b border-r border-slate-200 font-sans text-slate-700">會計助理 (Sophie...)</td>
                         <td className="p-1 border-b border-r border-slate-200"></td>
                         <td className="p-1 border-b border-slate-200"></td>
                       </tr>

@@ -610,7 +610,7 @@ export default function OriginalSlideshow({
                       {/* RED HIGHLIGHT */}
                       <div className="relative border-2 border-red-500 p-1 bg-emerald-50/40 rounded">
                         <div className="text-emerald-700 font-bold">審核狀態: 過帳確認 [Y] (主管聯網簽章已鎖定)</div>
-                        <div className="text-slate-400 text-[8px] mt-0.5">核簽字軌：主管廖有毅 (L) & 承辦王淑菲 (W)</div>
+                        <div className="text-slate-400 text-[8px] mt-0.5">核簽字軌：主管 (L) & 承辦 (W)</div>
                       </div>
                     </div>
                   </div>

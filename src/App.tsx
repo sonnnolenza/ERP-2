@@ -58,7 +58,7 @@ const storyboardSegments: StoryboardSegment[] = [
     erpScreen: "ACPI02",
     visualFocus: "進項發票審核要點：發票日期、字軌與統編。",
     visualDetail: "畫面切換至應付憑單(ACPI02)操作介面。鏡頭瞬間拉近 (Speed Zoom) 特寫左側的『麗嬰房倉儲租金進項發票』，紅框套在發票日期與統一編號。隨後滑鼠光標擺動到發票日期與交易日期相互匹配。",
-    erpMockupDescription: "應付憑單建立畫面：包含單據字軌主管廖有毅(L)及承辦王淑菲(W)代號。表單主鍵為發票總額 $2,158,895（貨款 $2,056,090 與營業稅 $102,805）。發票日期欄位顯示 2026/05/27。",
+    erpMockupDescription: "應付憑單建立畫面：包含單據字軌主管(L)及承辦(W)代號。表單主鍵為發票總額 $2,158,895（貨款 $2,056,090 與營業稅 $102,805）。發票日期欄位顯示 2026/05/27。",
     editorCuts: "【15.0s】硬切（Cut）進入 ACPI02 輸入畫面。【20.0s】當發票號碼輸入時，配上流暢的『機械鍵盤打字音效』。【30.0s】局部變焦至下方付款到期日區塊。",
     audioBgm: "打字音效疊加。背景音樂進入平穩推進的主弦律，維持心流學習狀態。",
     compliancePoint: "裝訂稽核：進項憑證編號與扣抵聯之核對，為申報扣抵銷項稅額之法定前提，如有不符，將導致國稅局核定補稅處罰。"
@@ -315,7 +315,7 @@ export default function App() {
   const lastSpokenSceneIdxRef = useRef<number | null>(null);
 
   // New Draft Code ID Builder State parameters (according to user's formula specification)
-  const [genOperator, setGenOperator] = useState<string>("W"); // Default is W (王淑菲)
+  const [genOperator, setGenOperator] = useState<string>("W"); // Default is W (助理)
   const [genTodayDate, setGenTodayDate] = useState<string>("2026-06-03"); // Today in this scenario (2026-06-03)
   const [genVoucherDate, setGenVoucherDate] = useState<string>("2026-05-27"); // Voucher creation date on ACPI02
   const [genBatchCount, setGenBatchCount] = useState<number>(5); // Default 5th batch today
@@ -1301,8 +1301,8 @@ export default function App() {
                 </label>
                 <div className="grid grid-cols-3 gap-1.5">
                   {[
-                    { key: "W", label: "W - 王淑菲 (助理)", desc: "王" },
-                    { key: "L", label: "L - 主管 (會計)", desc: "廖" },
+                    { key: "W", label: "W - 會計助理 (W)", desc: "助" },
+                    { key: "L", label: "L - 會計主管 (L)", desc: "主" },
                     { key: "C", label: "C - 陳美玲 (出納)", desc: "陳" }
                   ].map((op) => (
                     <button

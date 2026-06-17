@@ -8,27 +8,27 @@ export default function CompanySidebar() {
   const [messages, setMessages] = useState<DirectMessage[]>([
     {
       id: 1,
-      sender: "主管 廖有毅",
+      sender: "主辦會計主管",
       avatar: "👨‍💼",
       role: "主辦會計 / 審查主管",
       time: "10:15",
-      message: "王淑菲(E12106)，艾盟仕租金發票（淨額 2,056,090）來了。記得核對憑單和發票、照民國規則建底稿編號。注意，底稿修正只需手動重跑 AJSB01 覆蓋，不可改傳票實體！",
+      message: "會計助理(E12106)，艾盟仕租金發票（淨額 2,056,090）來了。記得核對憑單和發票、照民國規則建底稿編號。注意，底稿修正只需手動重跑 AJSB01 覆蓋，不可改傳票實體！",
       isMe: false,
       unread: true
     },
     {
       id: 2,
-      sender: "你 (王淑菲)",
+      sender: "你 (會計助理)",
       avatar: "👸",
       role: "實習生 / 會計助理",
       time: "10:18",
-      message: "好的廖主管，發票號碼 AY56654359 比對對齊了，進項稅額摘要 [04377371] 也會登打。那如果廖主管審核退回應付憑單，要退還重編呢？",
+      message: "好的，主管。發票號碼 AY56654359 比對對齊了，進項稅額摘要 [04377371] 也會登打。那如果主管審核退回應付憑單，要退還重編呢？",
       isMe: true,
       unread: false
     },
     {
       id: 3,
-      sender: "主管 廖有毅",
+      sender: "主辦會計主管",
       avatar: "👨‍💼",
       role: "主辦會計 / 審查主管",
       time: "10:20",
@@ -44,7 +44,7 @@ export default function CompanySidebar() {
     if (!inputVal.trim()) return;
     const newMsg: DirectMessage = {
       id: Date.now(),
-      sender: "你 (王淑菲)",
+      sender: "你 (會計助理)",
       avatar: "👸",
       role: "實習生 / 會計助理",
       time: "10:45",
@@ -68,7 +68,7 @@ export default function CompanySidebar() {
           </h3>
           <span className="text-[10px] bg-rose-50 text-rose-600 px-1.5 rounded-full font-bold">待覆核</span>
         </div>
-        <p className="text-[10px] text-slate-400">王淑菲 (會計實習) ⇄ 廖有毅 (主辦會計) 之作業溝通線</p>
+        <p className="text-[10px] text-slate-400">會計助理 ⇄ 主責主管 之作業溝通線</p>
       </div>
 
       {/* Chat Messages Log */}
@@ -102,7 +102,7 @@ export default function CompanySidebar() {
             value={inputVal}
             onChange={(e) => setInputVal(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-            placeholder="與廖主管回報作業進度..."
+            placeholder="與主管回報作業進度..."
             className="flex-1 bg-slate-50 border border-slate-200 rounded p-1.5 text-xs outline-none focus:ring-1 focus:ring-indigo-500 font-sans"
           />
           <button 

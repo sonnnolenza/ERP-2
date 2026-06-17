@@ -280,7 +280,7 @@ export default function TimelinePlayer({
             </div>
             <div>
               <span className="text-slate-500 block">承辦簽章:</span>
-              <span className="text-emerald-400 font-bold">王淑菲「合規」</span>
+              <span className="text-emerald-400 font-bold">會計助理「合規」</span>
             </div>
           </div>
         );
@@ -420,7 +420,7 @@ export default function TimelinePlayer({
 
             <div className="space-y-1">
               <span className="text-[9.5px] text-amber-400 font-semibold block tracking-wider uppercase font-sans">
-                {activeScene.title} • {activeScene.subtitle} (講師 廖有毅 主管 & 實習生王淑菲 口播旁白)
+                {activeScene.title} • {activeScene.subtitle} (講師 主管 & 實習生 口播旁白)
               </span>
               <p className="text-slate-100 text-[11px] sm:text-[11.5px] md:text-[12px] leading-relaxed font-medium tracking-wide">
                 {activeScene.narrative}
